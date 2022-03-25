@@ -21,7 +21,7 @@ def heapifyForMax(heapArray, i):
     if largest != i:
         swap (heapArray, largest, i)
         print("     swap ", largest, i)
-        # after the swap, old arr[i] will be at arr[large]
+        # after the swap, old arr[i] will be at index largest
         heapifyForMax(heapArray, largest)
     
     return heapArray
